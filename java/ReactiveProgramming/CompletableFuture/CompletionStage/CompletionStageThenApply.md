@@ -6,6 +6,10 @@
 * 값을 변형해서 전달해야 하는 경우 유용
 
 ~~~java
+@FunctionalInterface
+public interface Function<T, R> {
+    R apply(T t);
+}
 public class CompletionStage {
     public <U> CompletionStage<U> thenApply(Function<? super T, ? extends U> fn);
 

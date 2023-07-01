@@ -8,6 +8,10 @@
 * 값을 받아서 action만 수행하는 경우 유용
 
 ~~~java
+@FunctionalInterface
+public interface Consumer<T> {
+    void accept(T t);
+}
 public class CompletionStage{
   public CompletionStage<Void> thenAccept(Consumer<? super T> action);
   public CompletionStage<Void> thenAcceptAsync(Consumer<? super T> action);
