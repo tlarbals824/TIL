@@ -51,6 +51,15 @@ public interface Runnable {
 
 ~~~java
 public class Helper {
+    public static CompletionStage<Integer> completionStage() {
+        var future = CompletableFuture.supplyAsync(() -> {
+            log.info("return in future");
+            return 1;
+        });
+        Thread.sleep(100);
+        return future;
+    }
+    
     public static CompletionStage<Integer> finishedStage() {
         var future = CompletableFuture.supplyAsync(() -> {
             log.info("supplyAsync");
