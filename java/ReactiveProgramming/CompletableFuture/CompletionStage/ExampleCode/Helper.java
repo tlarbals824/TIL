@@ -39,4 +39,26 @@ public class Helper {
             return 1;
         });
     }
+
+    public static CompletionStage<Integer> addOne(int value){
+        return CompletableFuture.supplyAsync(() -> {
+            try{
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            return value + 1;
+        });
+    }
+
+    public static CompletionStage<String> addResultPrefix(int value){
+        return CompletableFuture.supplyAsync(() -> {
+            try{
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            return "Result: " + value;
+        });
+    }
 }
