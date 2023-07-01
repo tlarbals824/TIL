@@ -50,8 +50,8 @@ public interface Runnable {
 
 ---
 
-* [thenAccept(Consumer)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletionStage/CompletionStageThenAccept.md)
-* [thenApply(Function)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletionStage/CompletionStageThenApply.md)
-* [thenCompose(Function)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletionStage/CompletionStageThenCompose.md)
-* [thenRun(Runnable)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletionStage/CompletionStageThenRun.md)
-* [exceptionally(Function)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletionStage/CompletionStageExceptionally.md)
+* [thenAccept(Consumer)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletionStage/CompletionStage/CompletionStageThenAccept.md)
+* [thenApply(Function)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletionStage/CompletionStage/CompletionStageThenApply.md)
+* [thenCompose(Function)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletionStage/CompletionStage/CompletionStageThenCompose.md)
+* [thenRun(Runnable)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletionStage/CompletionStage/CompletionStageThenRun.md)
+* [exceptionally(Function)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletionStage/CompletionStage/CompletionStageExceptionally.md)
