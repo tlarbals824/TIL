@@ -87,7 +87,9 @@ public class Helper {
 
 ---
 
-* [thenAccept](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletionStage/CompletionStageThenAccept.md)
+* [thenAccept(Consumer)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletionStage/CompletionStageThenAccept.md)
+* [thenApply(Function)](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletionStage/CompletionStageThenApply.md)
+* 
 
 
 
