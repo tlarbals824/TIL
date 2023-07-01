@@ -17,17 +17,23 @@ public class CompletionStage {
 
 ~~~java
 public class CompletionStageThenApplyExample {
-    public static void thenApplyAsync() {
-        log.info("start main");
-        CompletionStage<Integer> stage = Helper.finishedStage();
-        stage.thenApplyAsync(i -> {
-            log.info("{} in thenApplyAsync", i);
-            return i + 1;
-        }).thenApplyAsync(i -> {
-            log.info("{} in thenApplyAsync2", i);
-            return i + 1;
+    public static void thenApplyAsync() {log.info("start main");
+        CompletionStage<Integer> stage = Helper.completionStage();
+        stage.thenApplyAsync(value -> {
+            var next = value + 1;
+            log.info("in thenApplyAsync: {}", next);
+            return next;
+        }).thenApplyAsync(value -> {
+            var next = "result: " + value;
+            log.info("in thenApplyAsync2: {}", next);
+            return next;
+        }).thenApplyAsync(value -> {
+            boolean next = value.equals("result: 2");
+            log.info("in thenApplyAsync3: {}", next);
+            return next;
+        }).thenAcceptAsync(value -> {
+            log.info("{}", value);
         });
-        log.info("after thenApplyAsync");
         Thread.sleep(100);
     }
 }
