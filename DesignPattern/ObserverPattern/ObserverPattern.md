@@ -30,6 +30,12 @@
 ## 스프링에서 사용하는 유사 옵저버 패턴
 
 * Spring Event : 스프링 event는 ApplicationEventPublisher를 통해 이벤트를 발행하고 ApplicationListener 인터페이스를 이용하여 이벤트 발행 객체를 수신할 수 있습니다. 또한 스프링의 Event는 동기적으로 작동합니다.
-* Spring Webflux(Reactive Streams) : 스프링 WebFlux에서 Publisher, Subscriber 개념이 존재합니다. 이는 Reactive Streams에서 제공하는 개념으로 옵저버 패턴과 유사하게 Publisher를 통해 데이터를 Subscriber에게 전달합니다. 하지만 Spring Event와는 다르게 Publisher와 Subscriber는 다른 스레드에서 비동기적으로 작동합니다. Publicser와 Subscriber의 처리 성능이 차이가 날 수 있기 때문에 Subscriber에서 수신할 객체의 수를 조절하는 메서드를 제공합니다.  
+* Spring Webflux(Reactive Streams) : 스프링 WebFlux에서 Publisher, Subscriber 개념이 존재합니다. 이는 Reactive Streams에서 제공하는 개념으로 옵저버 패턴과 유사하게 Publisher를 통해 데이터를 Subscriber에게 전달합니다. 하지만 Spring Event와는 다르게 Publisher와 Subscriber는 다른 스레드에서 비동기적으로 작동합니다. Publicser와 Subscriber의 처리 성능이 차이가 날 수 있기 때문에 Subscriber에서 수신할 객체의 수를 조절하는 메서드를 제공합니다.
 
 ![Reactive Streams](img/diffObserverPublisherSubscriber.png)
+
+---
+
+> 참조자료 :
+> 
+> Spring WebFlux : https://zorba91.tistory.com/291
