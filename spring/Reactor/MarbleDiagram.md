@@ -2,7 +2,7 @@
 
 ## Marble Diagram 구성
 
-![](img/marblediagram.jpeg)
+<img src="img/marblediagram.jpeg" width="700">
 
 1. 다이어그램에는 2개의 타임라인이 존재합니다. 그 중 첫번째가 1번과 같이 Publisher를 emit하는 라인입니다. 또한 5번의 Operator에 대한 Upstream으로도 볼 수 있습니다.
 2. 2는 Publisher가 emit하는 데이터를 의미합니다. 타임라인은 왼쪽에서 오른쪽으로 흐르기 때문에 왼쪽에 있을수록 먼저 emit된 데이터입니다.
@@ -18,7 +18,7 @@
 
 ### Mono
 
-![](img/mono.jpeg)
+<img src="img/mono.jpeg" width="700">
 
 위 그림은 Mono의 Marble Diagram입니다.
 
@@ -37,7 +37,7 @@ public class MonoExample{
 
 ### Flux
 
-![](img/flux.jpeg)
+<img src="img/flux.jpeg" width="700">
 
 위 그림은 Flux의 Marble Diagram입니다. Mono와는 다르게 여러개의 데이터의 emit을 볼 수 있습니다.
 
