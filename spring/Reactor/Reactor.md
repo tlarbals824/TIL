@@ -4,7 +4,7 @@
 
 > [1. Marble Diagram](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/MarbleDiagram.md)
 > 
-> [2. Cold Sequence, Hot Sequence]()
+> [2. Cold Sequence, Hot Sequence](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/ColdSequenceHotSequence.md)
 > 
 > [3. Backpressure]()
 > 
