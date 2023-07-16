@@ -104,7 +104,7 @@ Reactor에는 Cold Sequence를 Hot Sequence로 동작을 변화시킬 수 있는
 
 ### share()
 
-share 메소드는 원본 Flux를 공유하는 새로운 Flux를 반환한다. 따라서 원본 Flux가 데이터를 emit하고 있는 중간에 구독을 하게된다면 해당 Subscriber는 새로운 Flux를 통해 구독 이후에 emit되는 데이터를 전달 받을 수 있습니다. 
+share 메소드는 원본 Flux를 공유하는 새로운 Flux를 반환합니다. 따라서 원본 Flux가 데이터를 emit하고 있는 중간에 구독을 하게된다면 해당 Subscriber는 새로운 Flux를 통해 구독 이후에 emit되는 데이터를 전달 받을 수 있습니다. 
 
 >Returns a new Flux that multicasts (shares) the original Flux. As long as there is at least one Subscriber this Flux will be subscribed and emitting data. When all subscribers have cancelled it will cancel the source Flux.
 > 
