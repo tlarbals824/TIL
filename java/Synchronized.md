@@ -83,10 +83,12 @@ public class SynchronizedConcurrencyControlWithTransactional{
 ~~~
 
 > 동시성 문제 해결하기
-> 
+>
 > * [Java Synchronized](https://github.com/tlarbals824/TIL/tree/main/java/Synchronized.md)
-> 
-> 
+>
+> * [JPA Lock](https://github.com/tlarbals824/TIL/tree/main/spring/JPA/JPALock.md)
+>
+> *
 
 
 > 참조 : 

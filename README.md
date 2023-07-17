@@ -15,6 +15,7 @@
 
 ## Spring
 
+* [JPA](https://github.com/tlarbals824/TIL/blob/main/spring/JPA/JPA.md)
 * [R2DBC](https://github.com/tlarbals824/TIL/blob/main/spring/R2DBC/r2dbc.md)
 * [Reactor](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Reactor.md)
 
