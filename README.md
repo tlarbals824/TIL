@@ -9,6 +9,7 @@
   * [CompletableStage](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletionStage/CompletionStage.md)
   * [CompletableFuture](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/CompletableFuture/CompletableFuture.md)
   * [Reactive Streams](https://github.com/tlarbals824/TIL/blob/main/java/ReactiveProgramming/ReactiveStreams/ReactiveStreams.md)
+* [Synchronized](https://github.com/tlarbals824/TIL/blob/main/java/Synchronized.md)
 
 * [JVM](https://github.com/tlarbals824/TIL/blob/main/java/JVM/JVM.md)
 
