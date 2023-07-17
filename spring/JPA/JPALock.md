@@ -177,9 +177,11 @@ public class NamedLockExample{
 >
 > * [JPA Lock](https://github.com/tlarbals824/TIL/tree/main/spring/JPA/JPALock.md)
 >
-> * 
+> * [Redis Concurrency Control](https://github.com/tlarbals824/TIL/tree/main/Redis/RedisConcurrency.md)
 
 > 참고 :
+> 동시성 제어(https://www.inflearn.com/course/동시성이슈-재고시스템/dashboard)
+> 
 > Pessimistic Lock(https://isntyet.github.io/jpa/JPA-비관적-잠금(Pessimistic-Lock)/)
 > 
 > 분산락 구현:MySQL(https://techblog.woowahan.com/2631/)
