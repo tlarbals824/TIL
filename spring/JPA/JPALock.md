@@ -1,6 +1,6 @@
 # JPA Lock
 
-JPA를 이용하여 동시성 문제를 해결하는 방법은 Pessimistic Lock, Optimistic Lock과 MySQL의 USER-LEVEL LOCK을 이용하는 방법이 있습니다.
+JPA를 이용하여 동시성 문제를 해결하는 방법은 Pessimistic Lock, Optimistic Lock과 Named Lock을 이용하는 방법이 있습니다.
 
 ## Pessimistic Lock(비관적 락)
 
