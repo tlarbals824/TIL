@@ -54,9 +54,9 @@ public class SynchronizedConcurrencyControl{
 }
 ~~~
 
-하지만 동시성 문제를 synchronized를 통해 해결하는 경우 @Transactional을 통해서 트랜잭션을 관리할 수 없습니다. 그 이유는 다음과 같습니다. 
+하지만 동시성 문제를 synchronized를 통해 해결하는 경우 Spring의 @Transactional을 통해서 트랜잭션을 관리할 수 없습니다. 그 이유는 다음과 같습니다. 
 
-@Transactional이 설정된 메서드는 Proxy 패턴으로 클래스가 생성이 됩니다. 그다음 생성된 클래스의 메서드에서 트랜잭션이 시작하고 기존 메서드가 실행됩니다. 이때 기존 메서드 실행은 Synchornized에 의해서 동기화가 됩니다. 마지막으로 작업이 완료된 이후에 커밋이 됩니다.  
+@Transactional이 설정된 메서드는 Proxy 패턴으로 클래스가 생성이 됩니다. 그다음 생성된 클래스의 메서드에서 트랜잭션이 시작하고 기존 메서드가 실행됩니다. 이때 기존 메서드 실행은 Synchronized에 의해서 동기화가 됩니다. 마지막으로 작업이 완료된 이후에 커밋이 됩니다.  
 
 이때 기존 메서드 실행과 트랜잭션 커밋 사이에 시간으로 인해 다른 스레드에서 해당 내용이 반영되지 않은 데이터를 가져오게 되고 동시성 문제가 발생하게 됩니다.
  
@@ -88,7 +88,7 @@ public class SynchronizedConcurrencyControlWithTransactional{
 >
 > * [JPA Lock](https://github.com/tlarbals824/TIL/tree/main/spring/JPA/JPALock.md)
 >
-> *
+> * [Redis Concurrency Control](https://github.com/tlarbals824/TIL/tree/main/Redis/RedisConcurrency.md)
 
 
 > 참조 : 
