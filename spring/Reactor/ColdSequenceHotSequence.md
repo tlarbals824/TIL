@@ -191,3 +191,12 @@ public class HotSequenceExample{
 55:40 [parallel-6] - # Subscriber1 is watching Singer E's song
 55:40 [parallel-6] - # Subscriber2 is watching Singer E's song
 ~~~
+
+> Reactor에서 Hot의 두가지 의미
+> 
+> * Warm up : 최초 구독이 발생하기 전까지는 데이터의 emit이 발생하지 않는 않습니다. share()의 경우에 해당합니다.
+> * Hot : 구독 여부와 상관없이 데이터가 emit됩니다.
+
+> 참고 :
+>
+> 스프링으로 시작하는 리액티브 프로그래밍(https://product.kyobobook.co.kr/detail/S000201399476)
