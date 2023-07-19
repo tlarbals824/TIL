@@ -13,9 +13,9 @@ Reactor의 Scheduler를 사용하면 이러한 문제를 최소화할 수 있습
 subscribeOn() Operator는 구독이 발생한 직후 실행될 스레드를 지정하는 Operator입니다.
 
 구독이 발생하면 원본 Publisher가 데이터를 최초로 emit하게 되는데, subscribeOn() Operator는 구독 시점 직후에 실행되기 때문에 원본 Publisher의 동작을 수행하기 위한 스레드를
-제어하는 Operator 입니다.
+제어하게 됩니다.
 
-만일 subscribeOn() Operator를 설정하지 않았다면 최초 실행 스레드인 main 스레드에서 Flux에 대한 처리가 이루어집니다.
+만일 subscribeOn() Operator를 설정하지 않았다면 최초 실행 스레드인 main 스레드에서 Publisher에 대한 처리가 이루어집니다.
 
 ~~~java
 public class SubscribeOnExample {
