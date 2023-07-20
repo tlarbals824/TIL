@@ -19,6 +19,10 @@
 * [R2DBC](https://github.com/tlarbals824/TIL/blob/main/spring/R2DBC/r2dbc.md)
 * [Reactor](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Reactor.md)
 
+## DB
+
+* [Redis](https://github.com/tlarbals824/TIL/tree/main/Redis/Redis.md)
+
 ## 디자인 패턴(Design Pattern)
 
 * [전략 패턴(Strategy Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/StrategyPattern/StrategyPattern.md)
