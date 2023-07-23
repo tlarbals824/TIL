@@ -16,11 +16,11 @@
 > 
 > [6. Context](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Context.md)
 > 
-> [7. Debugging]()
+> [7. Debugging](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Debugging.md)
 > 
-> [8. Testing]()
+> [8. Testing(정리중)](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Testing.md)
 > 
-> [9. Operators]()
+> [9. Operators(정리중)](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Operators.md)
 
 
 ## Reactor의 특징
@@ -57,3 +57,6 @@ public class FluxExample{
 2. 데이터를 가공(**.map**)
 3. 전달받은 데이터를 처리한다(**.subscribe**)
 
+> 참고 :
+>
+> 스프링으로 시작하는 리액티브 프로그래밍(https://product.kyobobook.co.kr/detail/S000201399476)
