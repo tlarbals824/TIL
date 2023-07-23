@@ -55,3 +55,6 @@ public class FluxExample{
 
 위 코드는 Flux의 .just(...)을 사용하여 여러 데이터를 emit하는 예제입니다.
 
+> 참고 :
+>
+> 스프링으로 시작하는 리액티브 프로그래밍(https://product.kyobobook.co.kr/detail/S000201399476)
