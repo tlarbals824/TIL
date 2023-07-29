@@ -18,7 +18,7 @@
 > 
 > [7. Debugging](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Debugging.md)
 > 
-> [8. Testing(정리중)](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Testing.md)
+> [8. Testing](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Testing.md)
 > 
 > [9. Operators(정리중)](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Operators.md)
 
