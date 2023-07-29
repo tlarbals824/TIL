@@ -10,7 +10,7 @@ Operator는 데이터를 가공하는 역할을 합니다. 이러한 Operator는
 
 > [1. Sequence 생성을 위한 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequenceEmitOperators.md)
 > 
-> [2. Sequence 필터링 Operator]()
+> [2. Sequence 필터링 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequenceFilteringOperators.md)
 > 
 > [3. Sequence 변환 Operator]()
 > 
