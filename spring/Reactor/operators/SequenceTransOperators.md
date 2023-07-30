@@ -250,7 +250,19 @@ collectMap() Operator는 Flux에서 emit된 데이터를 기반으로 key와 val
 
 <img src="img/collectMapWithKeyAndValueExtractors.svg" width="500">
 
-
+~~~java
+class CollectMapExample{
+    public static void main(String[] args) {
+        Flux.range(1, 10)
+            .collectMap(i -> i % 2 == 0 ? "even" : "odd",
+                i -> i * 10)
+            .subscribe(map -> log.info("map: {}", map));
+    }
+}
+~~~
+~~~
+17:01:19:02 [main] - map: {even=100, odd=90}
+~~~
 
 > 참고 :
 >
