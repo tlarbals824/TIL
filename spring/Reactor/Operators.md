@@ -12,7 +12,7 @@ Operator는 데이터를 가공하는 역할을 합니다. 이러한 Operator는
 > 
 > [2. Sequence 필터링 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequenceFilteringOperators.md)
 > 
-> [3. Sequence 변환 Operator]()
+> [3. Sequence 변환 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequenceTransOperators.md)
 > 
 > [4. Sequence의 내부 동작 확인을 위한 Operator]()
 > 
