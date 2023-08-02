@@ -16,7 +16,7 @@ Operator는 데이터를 가공하는 역할을 합니다. 이러한 Operator는
 > 
 > [4. Sequence의 내부 동작 확인을 위한 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequenceDoOnOperators.md)
 > 
-> [5. 에러 처리를 위한 Operator]()
+> [5. 에러 처리를 위한 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequenceErrorHandleOperators.md)
 > 
 > [6. Sequence의 동작 시간 측정을 위한 Operator]()
 > 
