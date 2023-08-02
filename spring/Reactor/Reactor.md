@@ -20,7 +20,7 @@
 > 
 > [8. Testing](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Testing.md)
 > 
-> [9. Operators(정리중)](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Operators.md)
+> [9. Operators](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/Operators.md)
 
 
 ## Reactor의 특징

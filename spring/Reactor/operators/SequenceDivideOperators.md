@@ -163,3 +163,6 @@ class GroupByExample{
 21:47:23:05 [main] - # onNext: [1( isEvenNumber: false), 3( isEvenNumber: false), 5( isEvenNumber: false), 7( isEvenNumber: false), 9( isEvenNumber: false)]
 ~~~
 
+> 참고 :
+>
+> 스프링으로 시작하는 리액티브 프로그래밍(https://product.kyobobook.co.kr/detail/S000201399476)
