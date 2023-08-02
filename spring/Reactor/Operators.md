@@ -18,9 +18,9 @@ Operator는 데이터를 가공하는 역할을 합니다. 이러한 Operator는
 > 
 > [5. 에러 처리를 위한 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequenceErrorHandleOperators.md)
 > 
-> [6. Sequence의 동작 시간 측정을 위한 Operator]()
+> [6. Sequence의 동작 시간 측정을 위한 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequencePerformanceOperators.md)
 > 
-> [7. Flux Sequence 분할을 위한 Operator]()
+> [7. Flux Sequence 분할을 위한 Operator](https://github.com/tlarbals824/TIL/blob/main/spring/Reactor/operators/SequenceDivideOperators.md)
 > 
 > [8. 다수의 Subscriber에게 Flux를 멀티캐스팅하기 위한 Operator]()
 
