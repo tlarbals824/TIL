@@ -3,6 +3,7 @@
 ## WebFlux 목차
 
 > [1. WebFlux 핵심 컴포넌트](https://github.com/tlarbals824/TIL/blob/main/spring/WebFlux/WebFluxMainComponent.md)
+> [2. WebFlux의 Non-Blocking 프로세스 구조](https://github.com/tlarbals824/TIL/blob/main/spring/WebFlux/WebFluxNonBlockingProcessStructure.md)
 
 ## WebFlux란?
 
@@ -27,7 +28,7 @@ WebFlux가 만들어진 이유는 다음과 같습니다.
 
 ## WebFlux의 요청 흐름
 
-<img src="img/DispatcherHandler.svg" width="500">
+<img src="img/DispatcherHandler.svg" width="800">
 
 1. 클라이언트로의 요청이 들어오면 Netty 서버를 거쳐 HttpHandler가 요청을 전달받습니다. 이때 각 서버 엔진들이 제공하는 API를 통해 ServerHttpRequest와 ServerHttpResponse를 포함하는 ServerWebExchange를 WebFliter 체인으로 전달합니다.
 2. ServerWebExchange는 WebFilter에서 전처리 과정을 거친 후, WebHandler 구현체인 DispatcherHandler에게 전달됩니다.
