@@ -7,6 +7,8 @@
 > [2. WebFlux의 Non-Blocking 프로세스 구조](https://github.com/tlarbals824/TIL/blob/main/spring/WebFlux/WebFluxNonBlockingProcessStructure.md)
 > 
 > [3. WebFlux의 스레드 모델](https://github.com/tlarbals824/TIL/blob/main/spring/WebFlux/WebFluxThread.md)
+> 
+> [4. 애노테이션, 함수형 엔드포인트 설정](https://github.com/tlarbals824/TIL/blob/main/spring/WebFlux/WebFluxController.md)
 
 ## WebFlux란?
 
