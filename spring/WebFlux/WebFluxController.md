@@ -104,7 +104,14 @@ public class LogHandler {
 
 ### 애노테이션과 함수형 동시 사용
 
-WebFlux에서는 @Controller와 함수형 엔드포인트를 동시에 사용할 수 없습니다. DispatcherHandler에서 HandlerMapping을 찾을때 제일 처음 조건에 충족하는 HandlerMapping 구현체가 사용됩니다. 이때 애노테이션 기반 RequestMappingHandlerMapping과 함수형 엔드포인트 기반 RouterFunctionMapping이 DispatcherHandler 내부 HandlerMapping List에 들어올때 함수형 엔드포인트 기반 RouterFunctionMapping이 RequestMappingHandlerMapping보다 순서가 앞서있습니다. 따라서 동일한 URI를 가지는 HandlerMapping이 있을때 함수형 엔드포인트 HandlerMapping만 사용됩니다.
+WebFlux에서는 @Controller와 함수형 엔드포인트를 동시에 사용할 수 없습니다. 
+
+| 프로그래밍 모델           | HandlerMapping               |
+|:-------------------|:-----------------------------|
+| 애노테이션(@Controller) | RequestMappingHandlerMapping |
+| 함수형 엔드포인트          | RouterFunctionMapping        |
+
+DispatcherHandler에서는 HandlerMapping을 찾을때 제일 처음 조건에 충족하는 HandlerMapping 구현체가 사용됩니다. 이때 애노테이션 기반 RequestMappingHandlerMapping과 함수형 엔드포인트 기반 RouterFunctionMapping이 DispatcherHandler 내부 HandlerMapping List에 입력될 때 함수형 엔드포인트 기반 RouterFunctionMapping이 RequestMappingHandlerMapping보다 순서가 앞서 입력됩니다. 따라서 동일한 URI를 가지는 HandlerMapping이 있을때 함수형 엔드포인트 HandlerMapping만 사용됩니다.
 
 ~~~java
 @Slf4j
