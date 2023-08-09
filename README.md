@@ -12,7 +12,7 @@
 * [Synchronized](https://github.com/tlarbals824/TIL/blob/main/java/Synchronized.md)
 
 * [JVM](https://github.com/tlarbals824/TIL/blob/main/java/JVM/JVM.md)
-* [GC](https://github.com/tlarbals824/TIL/blob/main/java/JVM/GC.md)
+* [Garbage Collection(GC)](https://github.com/tlarbals824/TIL/blob/main/java/GC/GC.md)
 
 ## Spring
 
