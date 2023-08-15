@@ -27,9 +27,11 @@
 
 ## 디자인 패턴(Design Pattern)
 
-* [전략 패턴(Strategy Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/StrategyPattern/StrategyPattern.md)
-* [옵저버 패턴(Observer Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/ObserverPattern/ObserverPattern.md)
-* [데코레이터 패턴(Decorator Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/DecoratorPattern/DecoratorPattern.md)
-* [팩토리 패턴(Factory Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/FactoryPattern/FactoryPattern.md)
-* [싱글턴 패턴(Singleton Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/SingletonPattern/SingletonPattern.md)
-* [커맨드 패턴(Command Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/CommandPattern/CommandPattern.md)
+* [생성 패턴(Creational Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/CreationalPattern.md)
+* [구조 패턴(Structural Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/StructuralPattern.md)
+* [행동 패턴(Behavioral Pattern)](https://github.com/tlarbals824/TIL/blob/main/DesignPattern/BehavioralPattern.md)
+
+
+
+
+
