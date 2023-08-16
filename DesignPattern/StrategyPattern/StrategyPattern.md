@@ -1,75 +1,30 @@
 # 전략 패턴(Strategy Pattern)
 
+## 전략 패턴이란?
 
 * 전략 패턴은 알고리즘군을 정의하고 캡슐화해서 각각의 알고리즘군을 수정해서 쓸 수 있게 해 줍니다.
 * 전략 패턴은 클라이언트의 알고리즘 사용과 구현을 분리하는 데 중점을 두고 있습니다.
 
-## 전략 패턴 사용의 이점
+## 전략 패턴의 구조
 
-* 알고리즘을 쉽게 확장하고 변경할 수 있습니다.
-* 코드 재사용성과 유연성을 높일 수 있습니다.
-* 클라이언트 코드는 구체적인 알고리즘에 종속되지 않으므로 유지보수가 용이해집니다.
+<img src="img/StrategyPattern.png" width="600">
 
-## 전략패턴의 구성요소
+* Strategy : 알고리즘을 추상화한 인터페이스나 추상 클래스입니다.
+* Concrete Strategy : 전략 인터페이스를 구현한 실제 알고리즘 클래스입니다.
+* Context : 전략 객체를 사용하는 클라이언트입니다. 환경은 전략 객체를 갖고 있으며, 실행 시에 적절한 전략을 선택하여 사용합니다.
 
-* 전략(Strategy) : 알고리즘을 추상화한 인터페이스나 추상 클래스입니다.
-* 구체적인 전략(Concrete Strategy) : 전략 인터페이스를 구현한 실제 알고리즘 클래스입니다.
-* 환경(Context) : 전략 객체를 사용하는 클라이언트입니다. 환경은 전략 객체를 갖고 있으며, 실행 시에 적절한 전략을 선택하여 사용합니다.
+## 전략 패턴의 장점
 
-## 코드
+* 개방/폐쇄 원칙 : 전략 패턴은 알고리즘을 변경하거나 새로운 알고리즘을 추가하는 데 용이합니다. 새로운 전략 클래스를 만들어 적용하거나 기존 전략을 수정하는 것만으로도 시스템의 동작을 변경할 수 있습니다.
+* 코드 중복 최소화 : 비슷한 알고리즘을 다양한 클래스에서 사용할 경우 중복 코드를 최소화할 수 있습니다. 각 전략은 고유한 클래스로 캡슐화되어 있기 때문에 코드 중복을 방지합니다.
+* 가독성과 유지보수성 향상 : 각 알고리즘을 별도의 클래스로 분리하고 클라이언트 코드에서는 전략 인터페이스를 통해 알고리즘에 접근하므로 코드가 간결해지고 유지보수가 용이해집니다.
+* 동적인 실행 시점 전략 변경 : 프로그램을 실행 중일 때 동적으로 전략을 변경할 수 있습니다. 이는 런타임 환경에서 특정 상황에 맞게 알고리즘을 선택하는 데 유용합니다.
 
-~~~java
-public abstract class Animal {
-    private SoundStrategy soundStrategy;
-    
-    public Animal(SoundStrategy soundStrategy){
-        this.soundStrategy = soundStrategy;
-    }
-    
-    public void sound(){
-        soundStrategy.makeSound();
-    }
-    
-    public void changeSound(SoundStrategy soundStrategy){
-        this.soundStrategy = soundStrategy;
-    }
-}
+## 전략 패턴의 단점
 
-public interface SoundStrategy{
-    void makeSound();
-}
+* 클라이언트와 전략 클래스 간의 연결 : 전략 패턴은 클라이언트가 전략 클래스를 직접 생성하고 선택해야 하는 단점이 있습니다. 이로 인해 클라이언트 코드와 전략 클래스 간의 강한 의존성이 생길 수 있습니다.
+* 종류별 클래스 증가 : 많은 전략이 존재하는 경우 전략 클래스의 수가 늘어날 수 있습니다. 이로 인해 클래스의 수가 증가하고, 관리하기 복잡해질 수 있습니다.
 
-public class DogSoundStrategy implements SoundStrategy{
-    public void makeSound(){
-        System.out.println("왈왈");
-    }
-}
-
-public class CatSoundStrategy implements SoundStrategy{
-    public void makeSound(){
-        System.out.println("야옹");
-    }
-}
-~~~
-
-## UML
-
-![전략 패턴](img/StrategyPatternUML.png)
-
-## 실행
-
-~~~java
-public class StrategyPatternExample {
-    public static void main(String[] args) {
-        Animal animal = new Animal(new DogSoundStrategy());
-        animal.sound();
-
-        animal.changeSound(new CatSoundStrategy());
-        animal.sound();
-    }
-}
-~~~
-~~~
-왈왈
-야옹
-~~~
+> 참조:
+> 
+> 전략 패턴(https://refactoring.guru/ko/design-patterns/strategy)
