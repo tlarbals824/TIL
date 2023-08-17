@@ -7,3 +7,5 @@
 > 목차
 > 
 > [1. GC 알고리즘](https://github.com/tlarbals824/TIL/blob/main/java/GC/GCAlgorithm.md)
+> 
+> [2. GC 종류](https://github.com/tlarbals824/TIL/blob/main/java/GC/GCType.md)
