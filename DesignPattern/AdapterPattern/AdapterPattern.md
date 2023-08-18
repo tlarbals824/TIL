@@ -1,4 +1,4 @@
-# 어댑터 패턴
+# 어댑터 패턴(Adapter Pattern)
 
 ## 어댑터 패턴이란?
 
@@ -20,7 +20,6 @@
 
 <img src="img/classAdapter.png" width="600">
 
-// 클래스 어댑터 패턴의 구성요소
 * Existing : Existing은 기존에 사용하던 클래스나 모듈로서, Service와 호환되지 않는 경우를 나타냅니다.
 * Adapter : Adapter 클래스는 Existing 클래스와 Service 클래스 모두 상속받는 다중 상속 클래스 입니다. 이 클래스의 메서드는 Existing 클래스의 메서드를 호출하면서, Service 클래스의 메서드를 호출하여 기능을 전달하게 됩니다.
 * Service : Service는 어댑티 클래스로 기존에 사용하던 클래스나 모듈로서, 클라이너트 코드가 직접 사용하기에는 타겟 인터페이스와 호환되지 않는 경우를 나타냅니다.
