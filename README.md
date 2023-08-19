@@ -19,7 +19,8 @@
 
 ## DB
 
-* [Redis](https://github.com/tlarbals824/TIL/tree/main/Redis/Redis.md)
+* [MySQL](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/MySQL.md)
+* [Redis](https://github.com/tlarbals824/TIL/tree/main/Database/Redis/Redis.md)
 
 ## 디자인 패턴(Design Pattern)
 
