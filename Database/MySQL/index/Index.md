@@ -10,7 +10,7 @@
 
 > 목차
 > 
-> [1. B-Tree]((https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/index/BTreeIndex.md)
+> [1. B-Tree](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/index/BTreeIndex.md)
 
 
 
