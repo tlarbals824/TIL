@@ -50,6 +50,72 @@
 * 인덱스 키 값 가운데 중복된 값이 많아지면 많아질수록 기수성은 낮아지고 동시에 선택도 또한 떨어집니다.
 * 인덱스는 선택도가 높을수록 검색 대상이 줄어들기 때문에 그만큼 빠르게 처리됩니다.
 
+## 인덱스 스캔
+
+### 레인지 스캔
+
+* 인덱스 접근 방법 가운데 가장 대표적인 방법입니다.
+* 인덱스 레인지 스캔은 검색해야 할 인덱스의 범위가 결정됐을 때 사용하는 방식입니다.
+* 검색하려는 값의 수나 검색 결과 레코드 건수와 관계없이 레인지 스캔이라고 합니다.
+* 인덱스의 리프 노드에서 일치하는 건들은 데이터 파일에서 레코드를 읽어오는 과정이 필요합니다. 이때 각 건마다 랜덤 I/O가 발생합니다.
+
+> mysql> select * from employees where first_name between 'Ebbe' and 'Gad';
+
+<img src="img/rangescan.svg" width="500">
+
+### 인덱스 풀 스캔
+
+* 인덱스 풀 스캔은 인덱스를 사용하지만 인덱스의 처음부터 끝까지 모두 읽는 방식입니다.
+* 대표적으로 쿼리의 조건절에 사용된 칼럼이 인덱스의 첫 번째 칼럼이 아닌 경우 인덱스 풀 스캔이 사용됩니다.
+* 일반적으로 인덱스의 크기는 테이블의 크기보다 작으므로 테이블을 모두 읽는 것보다 인덱스를 읽는 것이 효율적입니다.
+* 쿼리가 인덱스에 명시된 칼럼만으로 조건을 처리할 수 있는 경우 주로 이 방식이 사용됩니다.
+
+<img src="img/fullscan.svg" width="500">
+
+### 루스 인덱스 스캔
+
+* 루스 인덱스 스캔은 느슨하게 또는 듬성듬성하게 인덱스를 읽는 것을 의미합니다.
+* 오라클과 같은 DBMS의 "인덱스 스킵 스캔"과 유사합니다.
+* 루스 인덱스 스캔은 레인지 스캔과 비슷하게 동작하지만 중간에 필요치 않은 인덱스 키 값은 무시(Skip)하고 다음으로 넘어가는 형태로 처리합니다.
+* 일반적으로 GROUP BY 나 집합 함수 가운데 MAX(), MIN() 함수에 대해 최적화를 하는 경우에 사용됩니다.
+
+~~~mysql
+mysql>  select dept_no, MIN(emp_no)
+        from dept_emp
+        where dept_no between 'd002' and 'd004'
+        group by dept_no;
+~~~
+
+<img src="img/loosescan.jpeg" width="400">
+
+### 인덱스 스킵 스캔
+
+* MySQL 8.0 이전에는 인덱스의 순서를 뛰어넘어 검색할 경우 인덱스를 사용할 수 없었습니다.
+
+~~~mysql
+mysql> alter table employees
+    add index ix_gender_birthdate (gender, birth_date);
+
+# 인덱스를 사용하지 못하는 쿼리
+mysql> select * from employees where birth_date>='1965-02-01';
+# 인덱스를 사용할 수 있는 쿼리
+mysql> select * from employees where gender='M' and birth_date>='1965-02-01';
+~~~
+
+* MySQL 8.0 버전부터 옵티마이저가 인덱스의 순서를 뛰어넘어 검색가능하게 해주는 인덱스 스킵 스캔(Index Skip Scan) 최적화 기능이 도입됐습니다.
+* 인덱스 스킵 스캔은 WHERE 조건절의 검색을 최적화할때 사용됩니다.
+* 다음과 같은 단점이 있습니다.
+  * WHERE 조건절에 조건이 없는 인덱스의 선행 칼럼의 유니크한 값의 개수가 적어야 합니다.
+  * 쿼리가 인덱스에 존재하는 칼럼만으로 처리 가능해야 합니다.(커버링 인덱스)
+
+~~~mysql
+mysql> select * from employees where birth_date>='1965-02-01';
+# 옵티마이저가 위 쿼리를 아래 쿼리를 실행하는 것과 비슷한 형태로 최적화합니다.
+mysql> select * from employees where gender='M' and birth_date>='1965-02-01';
+mysql> select * from employees where gender='F' and birth_date>='1965-02-01';
+~~~
+<img src="img/indexskipscan.jpeg" width="500">
+
 > 참조
 > 
 > Real MySQL(책)
