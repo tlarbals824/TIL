@@ -1,5 +1,5 @@
 # Redis
 
-> * [Redis Sentinel](https://github.com/tlarbals824/TIL/tree/main/Redis/RedisSentinel.md)
-> * [Redis Lettuce](https://github.com/tlarbals824/TIL/tree/main/Redis/RedisLettuce.md)
-> * [Redis Redisson](https://github.com/tlarbals824/TIL/tree/main/Redis/RedisRedisson.md)
+> * [Redis Sentinel](https://github.com/tlarbals824/TIL/tree/main/Database/Redis/RedisSentinel.md)
+> * [Redis Lettuce](https://github.com/tlarbals824/TIL/tree/main/Database/Redis/RedisLettuce.md)
+> * [Redis Redisson](https://github.com/tlarbals824/TIL/tree/main/Database/Redis/RedisRedisson.md)
