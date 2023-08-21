@@ -59,7 +59,9 @@
 * 검색하려는 값의 수나 검색 결과 레코드 건수와 관계없이 레인지 스캔이라고 합니다.
 * 인덱스의 리프 노드에서 일치하는 건들은 데이터 파일에서 레코드를 읽어오는 과정이 필요합니다. 이때 각 건마다 랜덤 I/O가 발생합니다.
 
-> mysql> select * from employees where first_name between 'Ebbe' and 'Gad';
+~~~
+mysql> select * from employees where first_name between 'Ebbe' and 'Gad';
+~~~
 
 <img src="img/rangescan.svg" width="500">
 
