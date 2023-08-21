@@ -39,3 +39,8 @@ mysql>  create table user (
         index ix_fullname ((concat(first_name,' ',last_name))) # 함수를 직접 사용하는 인덱스
         );
 ~~~
+
+
+> 참조
+>
+> Real MySQL 8.0 1권(https://product.kyobobook.co.kr/detail/S000001766482)

@@ -120,4 +120,4 @@ mysql> select * from employees where gender='F' and birth_date>='1965-02-01';
 
 > 참조
 > 
-> Real MySQL(책)
+> Real MySQL 8.0 1권(https://product.kyobobook.co.kr/detail/S000001766482)

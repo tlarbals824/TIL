@@ -18,3 +18,6 @@
 * 인덱스는 데이터를 관리하는 방식(알고리즘)에 따라 대표적으로 B-Tree 인덱스와 Hash 인덱스로 구분할 수 있습니다.
 * 데이터의 중복 허용 여부로 분류하면 유니크 인덱스(Unique)와 유니크하지 않은 인덱스(Non-Unique)로 구분할 수 있습니다.
 
+> 참조
+>
+> Real MySQL 8.0 1권(https://product.kyobobook.co.kr/detail/S000001766482)
