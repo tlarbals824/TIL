@@ -20,25 +20,25 @@
 
 * DIRTY READ는 하나의 트랜잭션이 다른 트랜잭션에서 아직 커밋되지 않은 변경된 데이터를 읽을 때 발생합니다.
 
-<img src="img/dirtyread.svg" width="400">
+<img src="img/dirtyread.svg" width="500">
 
 ### NON-REPEATABLE READ
 
 * NON-REPEATABLE READ는 하나의 트랜잭션이 동일한 데이터를 다시 읽을 때, 그 데이터의 값이 변경된 경우 발생합니다.
 
-<img src="img/NonRepeatableRead.svg" width="400">
+<img src="img/NonRepeatableRead.svg" width="500">
 
 ### PHANTOM READ(PHANTOM ROWS)
 
 * PHANTOM READ(PHANTOM ROWS)는 트랜잭션 안에서 동일한 쿼리를 실행했을 때, 결과 집합이 다른 행을 반환하는 현상을 의미합니다.
 
-<img src="img/PhantomRead.svg" width="400">
+<img src="img/PhantomRead.svg" width="500">
 
 ### Lost Update
 
 * Lost Update는 두 개 이상의 트랜잭션이 동시에 동일한 데이터를 수정하고, 마지막으로 커밋한 트랜잭션이 이전 트랜잭션의 변경을 덮어쓸 때 발생합니다. 이로 인해 이전 변경 사항이 손실됩니다
 
-<img src="img/LostUpdate.svg" width="400">
+<img src="img/LostUpdate.svg" width="500">
 
 ## 트랜잭션 격리 수준(Transaction Isolation Level)
 
@@ -56,7 +56,7 @@
 * DIRTY READ가 허용되는 격리 수준입니다.
 * READ UNCOMMITTED는 데이터 무결성을 보장하지 않고, 일관성이 깨질 수 있으므로 실무에서는 거의 사용되지 않습니다.
 
-<img src="img/dirtyread.svg" width="400">
+<img src="img/dirtyread.svg" width="500">
 
 ### READ COMMITTED
 
@@ -65,7 +65,7 @@
 * READ COMMITTED는 오라클 DBMS에서 기본으로 사용되는 격리 수준입니다.
 * DIRTY READ 문제는 발생하지 않지만 NON-REPEATABLE READ 문제가 발생할 수 있습니다.
 
-<img src="img/ReadCommitted.svg" width="400">
+<img src="img/ReadCommitted.svg" width="500">
 
 ### REPEATABLE READ
 
@@ -77,7 +77,7 @@
 * 바이너리 로그를 가진 MySQL 서버에서는 최소 REPEATABLE READ 격리 수준 이상을 사용해야합니다.
 * NON-REPEATABLE READ 문제는 발생하지 않지만 PHANTOM READ(PHANTOM ROWS)가 발생할 수 있습니다.
 
-<img src="img/RepeatableRead.svg" width="400">
+<img src="img/RepeatableRead.svg" width="500">
 
 ### SERIALIZABLE
 
