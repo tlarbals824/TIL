@@ -2,9 +2,9 @@
 
 > 목차
 > 
-> [1. MySQL 엔진 락]
+> [1. MySQL 엔진 락](https://github.com/tlarbals824/TIL/blob/main/Database/MySQL/Lock/MySQLEngineLock.md)
 > 
-> [2. InnoDB 스토리지 엔진 락]
+> [2. InnoDB 스토리지 엔진 락](https://github.com/tlarbals824/TIL/blob/main/Database/MySQL/Lock/InnoDBLock.md)
 
 ## MySQL 락
 
