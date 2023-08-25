@@ -46,3 +46,5 @@
 > 참조
 > 
 > Real MySQL 8.0 1권(https://product.kyobobook.co.kr/detail/S000001766482)
+>
+> Deadlock in DBMS(https://www.javatpoint.com/deadlock-in-dbms)
