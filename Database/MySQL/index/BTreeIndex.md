@@ -80,6 +80,8 @@ mysql> select * from employees where first_name between 'Ebbe' and 'Gad';
 * 오라클과 같은 DBMS의 "인덱스 스킵 스캔"과 유사합니다.
 * 루스 인덱스 스캔은 레인지 스캔과 비슷하게 동작하지만 중간에 필요치 않은 인덱스 키 값은 무시(Skip)하고 다음으로 넘어가는 형태로 처리합니다.
 * 일반적으로 GROUP BY 나 집합 함수 가운데 MAX(), MIN() 함수에 대해 최적화를 하는 경우에 사용됩니다.
+* 루스 인덱스 스캔의 경우 유니크한 값의 수가 적을수록 성능이 향상됩니다.
+* 프리픽스 인덱스는 루스 인덱스 스캔을 사용할 수 없습니다.
 
 ~~~mysql
 mysql>  select dept_no, MIN(emp_no)
