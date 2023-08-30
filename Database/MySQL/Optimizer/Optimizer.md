@@ -3,6 +3,12 @@
 > 목차
 > 
 > [1. ORDER BY 처리(filesort)](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/Optimizer/OrderByProcessing.md)
+> 
+> [2. GROUP BY 처리](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/Optimizer/GroupByProcessing.md)
+> 
+> [3. DISTINCT 처리](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/Optimizer/DistinctProcessing.md)
+> 
+> [4. 임시 테이블](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/Optimizer/InternalTemporaryTable.md)
 
 
 ## 옵티마이저 종류
@@ -33,3 +39,7 @@
 
 * 풀 인덱스 스캔은 인덱스를 처음부터 끝까지 스캔하는 것을 의미합니다.
 * 풀 인덱스 스캔도 풀 테이블 스캔과 마찬가지고 InnoDB에서의 **리드 어헤드(Read ahead)** 작업을 사용합니다.
+
+> 참조
+>
+> Real MySQL 8.0 1권(https://product.kyobobook.co.kr/detail/S000001766482)

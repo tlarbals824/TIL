@@ -134,3 +134,8 @@ mysql>  select *
         order by s.salary;
 ~~~
 <img src="img/sortbytemporarytable.svg" width="700">
+
+
+> 참조
+>
+> Real MySQL 8.0 1권(https://product.kyobobook.co.kr/detail/S000001766482)
