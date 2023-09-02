@@ -9,6 +9,8 @@
 > [3. DISTINCT 처리](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/Optimizer/DistinctProcessing.md)
 > 
 > [4. 임시 테이블](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/Optimizer/InternalTemporaryTable.md)
+> 
+> [5. 고급 최적화](https://github.com/tlarbals824/TIL/tree/main/Database/MySQL/Optimizer/AdvancedOptimizer.md)
 
 
 ## 옵티마이저 종류
