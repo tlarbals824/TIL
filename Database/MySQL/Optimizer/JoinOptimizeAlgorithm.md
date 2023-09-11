@@ -25,7 +25,7 @@
   8. 최종적으로 "부분 실행 계획"이 테이블의 조인순서로 결정됩니다.
 * Greedy 검색 알고리즘은 optimizer_search_depth 시스템 변수에 설정된 값에 따라 조인 최적화 비용이 상당히 줄어들 수 있습니다.
 
-<img src="img/Greedy.svg" width="500">
+<img src="img/Greedy.svg" width="700">
 
 ## MySQL 조인 최적화 시스템 변수
 
