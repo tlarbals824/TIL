@@ -6,6 +6,7 @@
 > * [Redis Backup](https://github.com/tlarbals824/TIL/tree/main/Database/Redis/RedisBackup.md)
 > * [Redis Replication](https://github.com/tlarbals824/TIL/tree/main/Database/Redis/RedisReplica.md)
 > * [Redis Message Broker](https://github.com/tlarbals824/TIL/tree/main/Database/Redis/RedisMessageBroker.md)
+> * [Redis Cache](https://github.com/tlarbals824/TIL/tree/main/Database/Redis/RedisCache.md)
 
 
 ## Redis 특징
