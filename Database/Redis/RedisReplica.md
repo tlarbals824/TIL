@@ -39,7 +39,9 @@
 
 * Redis에서 복제는 다음과 같은 과정으로 동작합니다.
 
+
 <img src="img/RedisReplicaWithDisk.svg" width="500">
+
 
 * Redis 7.0 이전 버전에서는 repl-diskless-sync 옵션이 기본으로 no 입니다.
 1. REPLICAOF 커맨드를 통해 복제 연결을 시도합니다.
@@ -51,7 +53,9 @@
 * Disk를 이용한 복제는 디스크 I/O 처리량에 영향을 받습니다. 마스터에서 RDB 파일을 저장하는 시간, 복제본에서 RDB 파일을 읽어오는 과정 모두 디스크 I/O 속도에 영향을 받기 때문입니다.
 * 해당 방법을 통해 복제를 사용하는 경우 RDB 파일이 생성되는 도중 다른 노드에서 복제 연결 요청이 들어오면 이 연결은 큐에 저장되며 기존 RDB 파일의 저장이 완료되면 여러 복제본이 한 번에 복제 연결을 시작할 수 있습니다.
 
+
 <img src="img/RedisReplicaWithDiskless.svg" width="500">
+
 
 * Redis 7.0 이후 버전에서는 repl-diskless-sync 옵션이 기본으로 yes 입니다.
 1. REPLICAOF 커맨드를 통해 복제 연결을 시도합니다.
