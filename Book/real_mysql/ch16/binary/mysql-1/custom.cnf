@@ -1,0 +1,8 @@
+[mysqld]
+# master server config
+server_id=1
+# log_bin=/binary-log-dir-path/binary-log-name
+sync_binlog=1
+binlog_cache_size=5M
+max_binlog_size=512M
+binlog_expire_logs_seconds=1209600

@@ -1,0 +1,21 @@
+services:
+  mysql-1:
+    image: mysql:8.2.0
+    ports:
+      - 3306:3306
+      - 33060:33060
+    container_name: mysql-1
+    volumes:
+      - ./mysql-1:/etc/mysql/conf.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+  mysql-2:
+    image: mysql:8.2.0
+    ports:
+      - 3307:3306
+      - 33061:33060
+    container_name: mysql-2
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./mysql-2:/etc/mysql/conf.d

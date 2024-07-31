@@ -1,0 +1,6 @@
+[mysqld]
+# replica server config
+server_id=2
+relay_log_purge=ON
+read_only
+log_replica_updates
