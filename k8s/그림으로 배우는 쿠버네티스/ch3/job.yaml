@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-example
+spec:
+  completions: 12          # 성공해야 할 횟수 (기본값: 1)
+  parallelism: 12          # 동시 실행 Pod 수 (기본값: 1)
+  backoffLimit: 4         # 실패 시 재시도 횟수 (기본값: 6)
+  ttlSecondsAfterFinished: 600  # 완료 후 600초 뒤 자동 삭제
+  template:
+    spec:
+      restartPolicy: Never  # Never 또는 OnFailure만 가능
+      containers:
+        - name: worker
+          image: docker.io/library/busybox
+          command: ["echo", "Hello, Job!"]

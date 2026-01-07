@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: backup-cronjob
+spec:
+  schedule: "* * * * *"           # 매일 새벽 2시
+  concurrencyPolicy: Forbid       # 동시 실행 정책
+  successfulJobsHistoryLimit: 3   # 성공 Job 보관 개수
+  failedJobsHistoryLimit: 1       # 실패 Job 보관 개수
+  startingDeadlineSeconds: 60     # 스케줄 놓치면 60초 내 시작
+  suspend: false                  # true면 일시 중지
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: backup
+              image: docker.io/library/busybox
+              command: ["echo", "Backup!"]
