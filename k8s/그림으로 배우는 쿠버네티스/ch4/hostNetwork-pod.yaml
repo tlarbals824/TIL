@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: po-nginx
+  name: po-nginx
+spec:
+  hostNetwork: true
+  containers:
+  - image: docker.io/library/nginx
+    name: nginx 
+    ports:

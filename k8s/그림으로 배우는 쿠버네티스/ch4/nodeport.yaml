@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp-nodeport
+  labels:
+    app: dp-nodeport
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dp-nodeport
+  template:
+    metadata:
+      labels:
+        app: dp-nodeport
+    spec:
+      containers:
+      - name: nginx
+        image: docker.io/library/nginx
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-nodeport
+spec:
+  type: NodePort
+  selector:
+    app: dp-nodeport
+  ports:
+  - protocol: TCP
+    port: 80            # 서비스 포트
+    targetPort: 80      # Pod의 컨테이너 포트
+    nodePort: 30080     # 노드 포트 (30000~32767 범위 내에서 지정)
