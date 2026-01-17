@@ -32,4 +32,3 @@ spec:
   - protocol: TCP
     port: 80            # 서비스 포트
     targetPort: 80      # Pod의 컨테이너 포트
-  
