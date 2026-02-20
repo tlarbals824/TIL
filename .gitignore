@@ -3,3 +3,7 @@
 **/.omc/
 .omx/
 **/.omx/
+
+# claude
+.claude/
+**/.claude/
