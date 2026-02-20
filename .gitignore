@@ -1,2 +1,5 @@
 # omc
-.omc/*
+.omc/
+**/.omc/
+.omx/
+**/.omx/
